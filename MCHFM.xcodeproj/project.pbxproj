@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0121464D998ADCF7767FB718 /* Pods_MCHFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF82D60B2485E2E0D5E74CC /* Pods_MCHFM.framework */; };
 		046F1BFF21379A9900357C22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F1BFE21379A9900357C22 /* AppDelegate.m */; };
 		046F1C0221379A9900357C22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F1C0121379A9900357C22 /* ViewController.m */; };
 		046F1C0521379A9900357C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046F1C0321379A9900357C22 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		046F1C0921379A9C00357C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046F1C0B21379A9C00357C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046F1C0C21379A9C00357C22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C223D2834E26B4D18586A62 /* Pods-MCHFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCHFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCHFM/Pods-MCHFM.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF82D60B2485E2E0D5E74CC /* Pods_MCHFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCHFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21C0C77F512EAACDD9DC401 /* Pods-MCHFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCHFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCHFM/Pods-MCHFM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0121464D998ADCF7767FB718 /* Pods_MCHFM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				046F1BFC21379A9900357C22 /* MCHFM */,
 				046F1BFB21379A9900357C22 /* Products */,
+				66257C6D34E8C198AADE0604 /* Pods */,
+				3994571173DE1FA64956AEA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = MCHFM;
 			sourceTree = "<group>";
 		};
+		3994571173DE1FA64956AEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DF82D60B2485E2E0D5E74CC /* Pods_MCHFM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66257C6D34E8C198AADE0604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C223D2834E26B4D18586A62 /* Pods-MCHFM.debug.xcconfig */,
+				E21C0C77F512EAACDD9DC401 /* Pods-MCHFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046F1C1021379A9C00357C22 /* Build configuration list for PBXNativeTarget "MCHFM" */;
 			buildPhases = (
+				D6DB13B832EA1095A2B1C730 /* [CP] Check Pods Manifest.lock */,
 				046F1BF621379A9900357C22 /* Sources */,
 				046F1BF721379A9900357C22 /* Frameworks */,
 				046F1BF821379A9900357C22 /* Resources */,
+				F655843BA9A87BFA68F15F68 /* [CP] Embed Pods Frameworks */,
+				0C9B87D613ABB8D0E4C3F603 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9B87D613ABB8D0E4C3F603 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCHFM/Pods-MCHFM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DB13B832EA1095A2B1C730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MCHFM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F655843BA9A87BFA68F15F68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MCHFM/Pods-MCHFM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MCHFMBase/MCHFMBase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MCHFMBase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCHFM/Pods-MCHFM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		046F1BF621379A9900357C22 /* Sources */ = {
@@ -283,14 +366,12 @@
 		};
 		046F1C1121379A9C00357C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C223D2834E26B4D18586A62 /* Pods-MCHFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCHFM/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.immx.MCHFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,14 +380,12 @@
 		};
 		046F1C1221379A9C00357C22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21C0C77F512EAACDD9DC401 /* Pods-MCHFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCHFM/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.immx.MCHFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

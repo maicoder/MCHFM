@@ -1,0 +1,6 @@
+framework module Pods_MCHFM {
+  umbrella header "Pods-MCHFM-umbrella.h"
+
+  export *
+  module * { export * }
+}

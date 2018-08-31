@@ -1,0 +1,6 @@
+framework module MCHFMBase {
+  umbrella header "MCHFMBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
